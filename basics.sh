@@ -46,16 +46,29 @@ echo "--- --- --- --- --- --- ---"
 # 	COMMAND
 # fi
 
+# EX:1
+
+read -p "Enter your name : "
+if [ "$NAME" == "Ahmed" ] ; then echo "Hi, Ahmed"
+else
+	echo "Hi, "
+fi
+
+# EX:2
 echo "Number Compare script..."
 read -p "Enter first number: " NUM_1
 read -p "Enter second number: " NUM_2
 
-if [ "$NUM_1" -gt "$NUM_2" ]
+if [ "$NUM_1" -eq "$NUM_2" ]
+then
+	echo "Number one is equal to Number two"
+elif [ "$NUM_1" -gt "$NUM_2" ] 
 then
 	echo "Number one is greater than number two"
 else
 	echo "Number one is less than number two"
-fi
+	
+	fi
 
 # end of script
 echo "--- --- --- --- --- --- ---"
