@@ -146,18 +146,33 @@ TEST_NON_ZERO="home/ahemdany/test_dir/test_dir/test_non_zero"
 # esac
 
 # EX:1
-read -p "Are you 21 or over? (Y/n): " ANSWER
-case "$ANSWER" in
-	[yY] | [yY][eE][sS] )
-	echo "You can have a bear"
-	;;
-	[nN] | [nN][oO] )
-	echo "you can't have a bear."
-	;;
-	* )
-	echo "choose a valid answer next time."
-esac
-		
+# read -p "Are you 21 or over? (Y/n): " ANSWER
+# case "$ANSWER" in
+#	[yY] | [yY][eE][sS] )
+#	echo "You can have a bear"
+#	;;
+#	[nN] | [nN][oO] )
+#	echo "you can't have a bear."
+#	;;
+#	* )
+#	echo "choose a valid answer next time."
+# esac
+
+# --- --- -- SIMPLE FOR LOOP -- --- ---
+# Usage : for $VAR in VARIABBLES
+# do
+# 	COMMANDS
+#	|	|
+# 	|	|
+# 	COMMANDS
+# done
+
+NAMES="Ahmed Mohamed Hassan Ibrahim"
+for NAME in $NAMES
+	do
+		echo "hello, $NAME"
+	done
+
 
 
 echo "--- --- --- --- --- --- ---"
