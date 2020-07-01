@@ -167,13 +167,25 @@ TEST_NON_ZERO="home/ahemdany/test_dir/test_dir/test_non_zero"
 # 	COMMANDS
 # done
 
-NAMES="Ahmed Mohamed Hassan Ibrahim"
-for NAME in $NAMES
+#
+# NAMES="Ahmed Mohamed Hassan Ibrahim"
+# for NAME in $NAMES
+#	do
+#		echo "hello, $NAME"
+#	done
+
+cd "/home/ahemdany/test_dir"
+FILES=`ls *.txt`
+echo "${FILES}"
+for FILE in $FILES
 	do
-		echo "hello, $NAME"
+		if [ -e "$FILE" ]
+		then
+			mv $FILE "new_$FILE"
+		else
+			exit 1
+		fi
 	done
-
-
 
 echo "--- --- --- --- --- --- ---"
 echo "end bash script"
