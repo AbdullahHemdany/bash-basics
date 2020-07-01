@@ -35,9 +35,27 @@ echo "--- --- --- --- --- --- ---"
 # if [ CONDITION ] ; then COMMAND
 # 	fi
 
-if [ "1" == "1" ] ; then echo "hi from if :D"
-	fi
+# if [ "1" == "1" ] ; then echo "hi from if :D"
+#	fi
 
+# --- --- -- if then else -- --- ---
+# if [ CONDItiON ]
+# then
+# 	COMMAND
+# else
+# 	COMMAND
+# fi
+
+echo "Number Compare script..."
+read -p "Enter first number: " NUM_1
+read -p "Enter second number: " NUM_2
+
+if [ "$NUM_1" -gt "$NUM_2" ]
+then
+	echo "Number one is greater than number two"
+else
+	echo "Number one is less than number two"
+fi
 
 # end of script
 echo "--- --- --- --- --- --- ---"
