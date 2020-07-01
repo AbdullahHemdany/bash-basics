@@ -2,6 +2,7 @@
 
 # author : Abdullah Hemdany
 # date : 1 / 7 / 2020
+# Goal : complie the basics of shell scripting
 
 # start of the script
 echo "start bash script."
@@ -22,13 +23,20 @@ echo "--- --- --- --- --- --- ---"
 
 # --- --- --- Read Input From User --- --- ---
 # usage: read -p "MESSAGE TO USER" VARIABLE_NAME
-read -p "Enter your name, " NAME
-read -p "Enter your age, " AGE
 
-echo "Basic info"
-echo "Name: ${NAME}"
-echo "Age: ${AGE}"
+# read -p "Enter your name, " NAME
+# read -p "Enter your age, " AGE
 
+# echo "Basic info"
+# echo "Name: ${NAME}"
+# echo "Age: ${AGE}"
+
+# --- --- --- -- if then -- --- --- ---
+# if [ CONDITION ] ; then COMMAND
+# 	fi
+
+if [ "1" == "1" ] ; then echo "hi from if :D"
+	fi
 
 
 # end of script
