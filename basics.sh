@@ -187,6 +187,17 @@ TEST_NON_ZERO="home/ahemdany/test_dir/test_dir/test_non_zero"
 #		fi
 #	done
 
+# --- --- --- String operator --- --- ---
+# -z STRING true if string is empty
+# -n STRING true if string is not empty
+# STRING_1 = STRING_2 true if equal
+# STRING_1 != STRING_2 true if not equal
+
+if [ -z "" ] ; then echo "string is empty" 
+	fi
+
+if [ -n "STR" ] ; then echo "String isn't empty"
+	fi
 
 echo "--- --- --- --- --- --- ---"
 echo "end bash script"
