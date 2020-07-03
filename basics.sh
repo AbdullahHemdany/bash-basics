@@ -174,18 +174,19 @@ TEST_NON_ZERO="home/ahemdany/test_dir/test_dir/test_non_zero"
 #		echo "hello, $NAME"
 #	done
 
-cd "/home/ahemdany/test_dir"
-FILES=`ls *.txt`
-echo "${FILES}"
-for FILE in $FILES
-	do
-		if [ -e "$FILE" ]
-		then
-			mv $FILE "new_$FILE"
-		else
-			exit 1
-		fi
-	done
+# cd "/home/ahemdany/test_dir"
+# FILES=`ls *.txt`
+# echo "${FILES}"
+# for FILE in $FILES
+#	do
+#		if [ -e "$FILE" ]
+#		then
+#			mv $FILE "new_$FILE"
+#		else
+#			exit 1
+#		fi
+#	done
+
 
 echo "--- --- --- --- --- --- ---"
 echo "end bash script"
